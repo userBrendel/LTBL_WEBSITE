@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="Style.css">
+  <title>LTBL About Us</title>
+</head>
+<body>
+  <div class="scroll-container">
+    <header>
+      <nav>
+        <div class="left-container">
+          <div class="logo-container">
+            <img src="LTBL LOGO 1.png" alt="School Logo" class="logo"> 
+          </div>
+          <div class="school-names">
+            <h1>LET THERE BE LIGHT</h1>
+            <h2>Training & Development Institute</h2>
+          </div>
+        </div>
+
+        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+
+        <ul class="nav-links">
+          <li class="active">HOME</li>
+          <li>ABOUT</li>
+          <li>CLASSES</li>
+          <li>ADMISSION</li>
+          <li>MORE</li>
+        </ul>
+      </nav>  
+
+      <div class="header-content">
+        <h1>ABOUT US</h1>
+        <p>LTBL TRAINING & DEVELOPMENT INSTITUTE</p>
+      </div>  
+    </header>
+
+    <section class="Identity">
+      <h1>IDENTITY</h1>
+      <p>Let There Be Light (LTBL) Training and Development Institute was established in the year 2019 with the vision of training children and adults alike for academic and skills excellence. As small as we are, we are sure of our legitimacy by having a KHDA-approved as well as achieved quality status with our certifying partner. </p>
+    </section>
+
+    <div class="image-gallery">
+      <img src="about.png" alt="Image 1">
+      <img src="about.png" alt="Image 2">
+      <img src="about.png" alt="Image 3">
+      <img src="about.png" alt="Image 4">
+      <img src="about.png" alt="Image 5">
+      <img src="about.png" alt="Image 6">
+      <img src="about.png" alt="Image 7">
+      <img src="about.png" alt="Image 8">
+      <img src="about.png" alt="Image 9">
+      <img src="about.png" alt="Image 10">
+    </div>
+
+    <section class="institution-section">
+      <div class="institution-text">
+        <h2 class="institution-subtitle">
+          <span class="highlight">BE A PART</span> OF OUR
+        </h2>
+        <h1 class="institution-title">INSTITUTION</h1>
+      </div>
+      <form class="institution-form">
+        <input type="email" id="email" class="email-input" placeholder="Email" aria-label="Email">
+        <button type="submit" class="submit-button">INQUIRE NOW</button>
+      </form>
+    </section>
+    
+    
+    <footer></footer>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+
+      hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
