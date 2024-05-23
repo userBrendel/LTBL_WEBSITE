@@ -306,13 +306,14 @@ li.active:hover{
 
 }
 
+
 /********************************* IMAGE GALLERY ******************************/
 
 .image-gallery {
   display: flex;
   overflow-x: auto;
   gap: 20px;
-  margin-bottom: 200px;
+  margin-bottom: 60px;
 
 }
 
