@@ -26,19 +26,19 @@ body, html {
 .scroll-container {
   overflow-y: auto;
   height: 100%;
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 
 .scroll-container::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
+  display: none;  
 }
 
 /********************* HEADER/ NAV BAR / 1ST PART *******************/
 
 .main-header {
   position: relative;
-  background-image: url('Hero.png');
+  background-image: url('Images/Hero.png');
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -56,7 +56,7 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity to control the darkness of the overlay */
+  background-color: rgba(0, 0, 0, 0.5); 
   z-index: -1;
 }
 
@@ -74,24 +74,24 @@ body, html {
 }
 
 .main-statement h1 {
-  margin: 0 auto; /* Add margin auto to horizontally center */
+  margin: 0 auto; 
   font-size: 50px;
   width: 70%;
-  text-align: center; /* Ensure text alignment is centered */
+  text-align: center; 
 }
 
 .main-statement p {
-  margin: 0 auto; /* Add margin auto to horizontally center */
+  margin: 0 auto; 
   font-size: 20px;
   width: 80%;
-  text-align: center; /* Ensure text alignment is centered */
+  text-align: center; 
   margin-top: 100px;
 }
 
 
 
 .about-header {
-  background-image: url('about.png');
+  background-image: url('Images/about.png');
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -137,7 +137,7 @@ nav {
   height: 95px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
-  z-index: 10; /* Ensure the navbar is always on top */
+  z-index: 10; 
 }
 
 .left-container,
@@ -238,13 +238,13 @@ li.active:hover {
     flex-direction: column;
     width: 93%;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.283); /* Light transparent background */
-    backdrop-filter: blur(5px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    background-color: rgba(255, 255, 255, 0.283); 
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px); 
     top: 100px;
     border-radius:50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Border to enhance glass effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
   }
 
   .nav-links.active {
@@ -284,14 +284,14 @@ li.active:hover {
     width: 95%;
     flex-direction: column;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.283); /* Light transparent background */
-    backdrop-filter: blur(5px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    background-color: rgba(255, 255, 255, 0.283); 
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(10px); 
     top: 100px;
     z-index: 3;
     border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Border to enhance glass effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.2); 
   }
 
   .nav-links.active {
@@ -348,7 +348,6 @@ li.active:hover {
   }
 }
 
-/* Apply the animation to the elements */
 .Identity h1,
 .Identity p {
   animation: slideInFromLeft 1s ease forwards;
@@ -419,7 +418,7 @@ li.active:hover {
 
 .gallery-wrapper {
   display: flex;
-  width: 200%; /* Double the width for smooth looping */
+  width: 200%; 
   animation: slide 15s linear infinite;
 }
 
@@ -522,7 +521,7 @@ li.active:hover {
 }
 
 .submit-button {
-  margin-left: 0; /* Adjusted margin-left */
+  margin-left: 0; 
   margin-top: 10px;
   padding: 10px 20px;
   background-color: var(--main-color-green);
