@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LTBL</title>
@@ -33,9 +31,10 @@
     </style>
 </head>
 <body>
+  
     <div class="scroll-container">
         <header class="main-header">
-          <nav>
+          <nav >
             <div class="left-container">
               <div class="logo-container">
                 <a href="main.html">
@@ -52,12 +51,14 @@
     
             <ul class="nav-links">
              <a href="main"><li class="active">HOME</li> </a> 
-              <a href="about.html"><li>ABOUT</li></a>
+             <a href="about.html"><li>ABOUT</li></a>
              <a href="classes.html"><li>CLASSES</li></a> 
-              <li>ADMISSION</li>
-              <li>MORE</li>
+             <a href="admission.html"><li>ADMISSION</li></a>
+             <li>MORE</li>
             </ul>
           </nav>  
+
+
     
           <div class="main-header-content">
             <h1>LET OUR LIGHT SHINE AND<br>IMPACT THE WORLD</h1>
@@ -126,6 +127,7 @@
       </div>
     </div>
 
+
     
     <section class="institution-section">
       <div class="institution-text">
@@ -135,17 +137,19 @@
           <h1 class="institution-title">INSTITUTION</h1>
       </div>
       <form class="institution-form" id="enrollmentForm" onsubmit="sendMail(); return false;">
-          <input type="text" id="name" class="input-field" placeholder="Your Name" required>
-          <input type="text" id="parentName" class="input-field" placeholder="Parent's Name" required>
-          <input type="email" id="email" class="input-field" placeholder="Email" required>
-          <input type="tel" id="phone" class="input-field" placeholder="Phone" required>
-          <textarea id="message" class="input-field" placeholder="Your Message" required></textarea>
+          <input type="text" id="name" class="input-field" placeholder="Your Name" autocomplete="name" required>
+          <input type="text" id="parentName" class="input-field" placeholder="Parent's Name" autocomplete="name" required>
+          <input type="email" id="email" class="input-field" placeholder="Email" autocomplete="email" required>
+          <input type="tel" id="phone" class="input-field" placeholder="Phone" autocomplete="tel" required>
+          <textarea id="message" class="input-field" placeholder="Your Message" autocomplete="off" required></textarea>
+          <!-- Setting autocomplete="off" for the message field as it's less likely to be autofilled -->
           <div class="button-container">
               <button type="submit" class="submit-button">ENROLL NOW</button>
               <button type="reset" class="reset-button">RESET</button>
           </div>
       </form>
   </section>
+  
   
   
   <div class="footer">
@@ -184,11 +188,37 @@
       </div>
     </div>
     </div>   
+
+
     <footer class="footer2">
       Copyright © 2024 Let There Be Light Training & Development Institute. All rights reserved.
     </footer>     
   </div>
 </div>
+
+<script>
+  const body = document.body;
+  let lastScroll = 0;
+  
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+  
+    if (currentScroll <= 0) {
+      body.classList.remove("scroll-up");
+    }
+  
+    if (currentScroll < lastScroll && !body.classList.contains("scroll-down")) {
+      body.classList.remove("scroll-down");
+      body.classList.add("scroll-up");
+    }
+    
+    lastScroll = currentScroll;
+  });
+</script>
+
+
+
       <script src="Default.js"></script> 
 </body>
+
 </html>

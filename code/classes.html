@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LTBL</title>
+    <title>LTBL classes</title>
     <link rel="stylesheet" type="text/css" href="css/Default.css">
     <link rel="stylesheet" type="text/css" href="css/classes.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -33,6 +33,17 @@
             background-position: center;
             padding-top: 20px;
           }
+
+          @media (max-width: 768px) {
+            .class-header {
+             height: 100px; 
+            }
+          }
+          
+          @media (max-width: 480px) {
+            .class-header {
+              height: 600px; }
+          }
     </style>
 </head>
 <body>
@@ -57,7 +68,7 @@
              <a href="main.html"><li>HOME</li></a>
              <a href="about.html"><li>ABOUT</li></a>
              <a href="classes.html"><li class="active">CLASSES</li></a> 
-              <li>ADMISSION</li>
+             <a href="admission.html"><li>ADMISSION</li></a>
               <li>MORE</li>
             </ul>
           </nav>  

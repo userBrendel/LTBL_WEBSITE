@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LET THERE BE LIGHT Training & Development Institute</title>
+<link rel="stylesheet" type="text/css" href="css/Default.css">
+<link rel="stylesheet" type="text/css" href="css/admission.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<style>
+    .admin-header {
+      background-image: url('Images/about.png');
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      min-height: 600px;
+      padding-top: 20px;
+      color: white;
+      position: relative;
+    }
+</style>
+</head>
+<body>
+  <div class="scroll-container">
+    <header class="admin-header">
+      <nav>
+        <div class="left-container">
+          <div class="logo-container">
+            <a href="main.html">
+              <img src="Images/LTBL LOGO 1.png" alt="School Logo" class="logo">
+          </a>
+          </div>
+          <div class="school-names">
+            <h1>LET THERE BE LIGHT</h1>
+            <h2>Training & Development Institute</h2>
+          </div>
+        </div>
+        <ul class="nav-links">
+          <a href="main.html"><li>HOME</li></a>
+          <a href="about"><li>ABOUT</li></a>
+         <a href="classes.html"><li>CLASSES</li></a> 
+          <a href="admission.html"><li class="active">ADMISSION</li></a>
+          <li>MORE</li>
+        </ul>
+        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+      </nav>  
+      <div class="admin-content">
+        <p>LET THERE BE LIGHT TRAINING & DEVELOPMENT INSTITUTE</p>
+        <h1>BE A PART OF LTBL SHINE A LIGHT ON THE WORLD WITH US.</h1>
+      </div>  
+    </header>
+
+    <section class="admissions-banner">
+      <h2 class="admissions-text">ADMISSIONS ONGOING 2024-2025</h2>
+      <div class="admissions-divider"></div>
+    </section>
+
+    <section class="enroll-section">
+      <div class="enroll-container">
+        <div class="enroll-content">
+          <div class="enroll-title">
+            <h2 class="enroll-heading">enroll with us now</h2>
+          </div>
+          <div class="enroll-description">
+            <p class="enroll-text">
+              Be a part of Let There Be Light Training Institute and shine your light with us as we learn how to make an impact on the world together.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="enroll-image" style="background-image: url('images/enrollment.webp');"></div>
+      <div class="about-section">
+        <div class="about-content">
+          <div class="about-description">
+            <p class="about-text">
+              Choosing Let There Be Light Institute means accessing a comprehensive curriculum meticulously designed to cover both theoretical knowledge and practical skills. Our students are well-prepared for their future careers, guided by experienced faculty who are industry leaders and renowned educators. These experts bring their real-world experience and academic expertise into the classroom, enriching the learning experience. <br /><br />
+              Our modern campus boasts state-of-the-art facilities, including advanced laboratories, libraries, and technology centers, all aimed at supporting your educational journey. We incorporate the latest teaching methodologies and technologies to create an engaging and effective learning environment. Furthermore, our global partnerships and collaborations offer students access to international exchange programs, internships, and research opportunities.
+            </p>
+          </div>
+          <div class="inquiry-form">
+            <form class="form-container" id="enrollmentForm" onsubmit="sendMail(); return false;">
+              <h2 class="form-heading">inquire now</h2>
+              <div class="form-divider"></div>
+              <input type="text" id="name" class="input-field" placeholder="Your Name" required>
+              <input type="text" id="parentName" class="input-field" placeholder="Parent's Name" required>
+              <input type="email" id="email" class="input-field" placeholder="Email" required>
+              <input type="tel" id="phone" class="input-field" placeholder="Phone" required>
+              <textarea id="message" class="input-field" placeholder="Your Message" required></textarea>
+              <button type="submit" class="form-button">INQUIRE NOW</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer_top">
+          <div class="footer_logo">
+            <img src="Images/BigLogo.png" alt="School Logo" class="foot_logo">
+          </div>
+          <div class="footer_text">
+            <div class="footer-title">LET THERE BE LIGHT</div>
+            <div class="footer-subtitle">TRAINING & DEVELOPMENT INSTITUTE</div>
+          </div>
+        </div>
+        <div class="footer_bottom">
+          <div class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.0273546109224!2d55.323388874839786!3d25.269665228762722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5df59b6f1cb7%3A0x64b09710ab9df794!2sLTBL%20Training%20%26%20Development%20Institute!5e0!3m2!1sen!2sae!4v1716888325872!5m2!1sen!2sae" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="location-title">Our Institute</div>
+            <div class="location-details">
+              <p>Room 106 & 108 Nasco Building</p>
+              <p>Al Muraqqabat - Deira - Dubai</p>
+            </div>
+          </div>
+          <div class="contact_us">
+            <div class="contact-title">Contact Us</div>
+            <div class="contact-details">
+              <p><img src="Images/email-icon.png" alt="Email Icon" class="icon"> <a href="mailto:info@ltbl-institute.net">Email: info@ltbl-institute.net</a></p>
+              <p><img src="Images/phone-icon.png" alt="Phone Icon" class="icon"> Phone: 04 548 8778</p>
+            </div>
+          </div>
+          <div class="follow_us">
+            <div class="follow-title">Follow Us</div>
+            <div class="follow-icons">
+              <a href="https://www.facebook.com/LTBLInstitute" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/@ltblinstitute-dubai3805" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>   
+      <footer class="footer2">
+        Copyright © 2024 Let There Be Light Training & Development Institute. All rights reserved.
+      </footer>     
+    </div>
+  </div>
+        <script src="Default.js"></script> 
+</body>
+</html> 

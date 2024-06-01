@@ -40,45 +40,24 @@ body, html {
 }
 
 /********************* HEADER/ NAV BAR / 1ST PART *******************/
-
-.header-content {
-  position: absolute;
-  width: 50%;
-  max-width: 1000px;
-  line-height: 1;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  z-index: 5;
-}
-
-.header-content h1 {
-  font-size: 3rem;
-  margin: 0;
-}
-
-.header-content p {
-  font-size: 1.5rem;
-  margin: 10px 0 0;
-}
-
 header nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 99999; 
 }
 
+
 nav {
+  width: 95%;
   background-color: var(--main-color-gray);
   border-radius: 50px;
   margin: 20px 48px 0 48px;
   height: 95px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 10; 
+  transition: all 1s ease-in-out; /* Consolidate transition here */
 }
+
 
 .left-container,
 .logo-container,
@@ -179,7 +158,7 @@ li.active:hover {
   .nav-links {
     display: none;
     flex-direction: column;
-    width: 93%;
+    width: 90%;
     position: absolute;
     background-color: rgba(255, 255, 255, 0.283); 
     backdrop-filter: blur(5px);
