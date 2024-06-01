@@ -4,63 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LTBL</title>
-    <link rel="stylesheet" type="text/css" href="Default.css">
+    <link rel="stylesheet" type="text/css" href="css/Default.css">
+    <link rel="stylesheet" type="text/css" href="css/Main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <style>
-    /* General styles */
-.main-header-content {
-    text-align: left;
-    max-width: 1000px; /* Adjust as needed */
-    font-size: 25px;
-    margin: 200px 100px; /* Changed margin for responsiveness */
-}
+      .main-header {
+        background-image: url("Images/Hero.png");
+        box-shadow: 0 50px 100px var(--main-color-gray);
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        min-height: 1000px;
+        padding-top: 30px;
+        color: white;
+        position: relative;
+        z-index: 1; 
+        background-position: center 20%;
+      }
 
-.main-header-content h1 {
-    line-height: 35px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Drop shadow */
-}
-
-.main-header-content p {
-    line-height: 35px;
-    font-size: 18px;
-}
-
-.cta-button {
-    background-color: #179b11; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin-top: 40px;
-    cursor: pointer;
-    border-radius: 50px;
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.cta-button:hover {
-    background-color: #28582a; /* Darker green on hover */
-}
-
-/* Media Queries */
-@media only screen and (max-width: 768px) {
-    .main-header-content {
-        font-size: 15px; 
-        text-align: center; 
-        margin: 100px 0;
-    }
-
-    .main-header-content h1,
-    .main-header-content p {
-        line-height: 1.5;
-    }
-}
-
-
-                
-        
+      .KHDA-container {
+        background-image: url("Images/identity4.jpg");
+        background-attachment: fixed; 
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+      }
     </style>
 </head>
 <body>
@@ -70,7 +39,7 @@
             <div class="left-container">
               <div class="logo-container">
                 <a href="main.html">
-                  <img src="LTBL LOGO 1.png" alt="School Logo" class="logo">
+                  <img src="images/LTBL LOGO 1.png" alt="School Logo" class="logo">
               </a>
               </div>
               <div class="school-names">
@@ -82,196 +51,144 @@
             <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
     
             <ul class="nav-links">
-              <li class="active">HOME</li>
+             <a href="main"><li class="active">HOME</li> </a> 
               <a href="about.html"><li>ABOUT</li></a>
-              <li>CLASSES</li>
+             <a href="classes.html"><li>CLASSES</li></a> 
               <li>ADMISSION</li>
               <li>MORE</li>
             </ul>
           </nav>  
     
           <div class="main-header-content">
-            <h1>LET OUR LIGHT SHINE AND</h1>
-            <h1>IMPACT THE WORLD</h1>
+            <h1>LET OUR LIGHT SHINE AND<br>IMPACT THE WORLD</h1>
             <p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            <button class="cta-button">ENROLL NOW</button>
+            <button class="cta-button" onclick="scrollToInstitution()"">ENROLL NOW</button>
           </div>  
         </header>
 
         <div class="main-container">
           <div class="main-statement">
               <h1>LET OUR LITTLE LIGHT SHINE AND IMPACT THE WORLD</h1>
-              <p>Let There Be Light (LTBL) Training and Development Institute was established in the year 2019 with the vision of training children and adults alike for academic and skills excellence. As small as we are, we are sure of our legitimacy by having a KHDA-approved as well as achieved quality status with our certifying partner. <br><br> <br><br>  the process was rigorous, we persevered believing that to see excellence, we should be excellent as well</p>
+              <p>Let There Be Light (LTBL) Training and Development Institute was established in the year 2019 with the vision of training children and adults alike for academic and skills excellence. As small as we are, we are sure of our legitimacy by having a KHDA-approved as well as achieved quality status with our certifying partner. <br><br> the process was rigorous, we persevered believing that to see excellence, we should be excellent as well.</p>
           </div>
       </div>
+      
+    
+    <div class="programs-container">
+        <div class="certification-container">
+            <div class="content">
+                <h1>CERTIFICATION</h1>
+                <p>Let There Be Light" embraces the holistic ethos of the ACE (Accelerated Christian Education) curriculum, forging a seamless integration of spiritual enlightenment and academic achievement within a Christian framework. At its core, "Let There Be Light" is dedicated to nurturing the complete individual—mind, body, and spirit—immersing learners in a transformative educational journey where faith and scholarship converge harmoniously</p>
+                <button>VIEW MORE</button>
+            </div>
+            <img src="Images/Certifications.jpg">
+        </div>
+    
+        <div class="development-container">
+          <img src="Images/skills.jpg">
+            <div class="content">
+                <h1>CHILD SKILLS DEVELOPMENT</h1>
+                <p>LTBL Child Skill Development is committed to providing children with the tools, resources, and support they need to thrive in all areas of development, laying a solid foundation for future success and well-being. Through its holistic, individualized, and family-centered approach, LTBL Child Skill Development empowers children to shine brightly and reach their full potential.</p>
+                <button>VIEW MORE</button>
+            </div>
+        </div>
+    
+        <div class="FineArts-container">
+            <div class="content">
+                <h1>FINE ARTS</h1>
+                <p>LTBL Fine Arts provides opportunities for participants to develop their artistic skills and techniques under the guidance of experienced instructors and mentors. Whether it's learning to paint, play a musical instrument, act on stage, or dance, participants receive personalized instruction and support tailored to their individual needs and aspirations.</p>
+                <button>VIEW MORE</button>
+            </div>
+            <img src="Images/finearts.jpg">
+    </div>
+    </div>
 
+    <div class="KHDA-container">
+      <div class="KHDA-content">
+        <h1>KHDA ACCREDITED</h1>
+        <br>
+        <br>
+        <p>KHDA ACCREDIAs small as we are, we are sure of our legIn the year 2019, Let There Be Light (LTBL) Training and Development Institute embarked on its journey with a resolute vision: to nurture the academic and skills excellence of both children and adults. Despite our modest beginnings, we stand firm in our legitimacy, proudly bearing the approval of the Knowledge and Human Development Authority (KHDA) and attaining esteemed quality status with our certifying partner.itimacy by having a KHDA-approved as well as achieved quality status with our certifying partner.TED</p>
+      </div>
+    </div>
 
-      <section class="certifications-section">
-        <div class="certifications-container">
-          <div class="certifications-content">
-            <div class="certifications-details">
-              <h2 class="certifications-title">Certifications</h2>
-              <p class="certifications-description">
-                For individuals seeking to expand their skill set and enhance their professional qualifications, certifications offer a valuable avenue for advancement. Basic Logistic and Basic Accounting certifications provide fundamental knowledge in essential areas of business operations, equipping learners with the tools to navigate logistical challenges and financial management tasks effectively.
-              </p>
-              <button class="enroll-button">
-                <span class="enroll-text">ENROLL NOW</span>
-              </button>
-            </div>
-          </div>
-          <div class="certifications-image-container">
-            <div class="certifications-image" role="img" aria-label="Certifications Image" style="background-image: url('home-certificate.png');"></div>
-          </div>
-        </div>
-      </section>
-      <section class="child-skills-development">
-        <div class="child-skills-development-container">
-          <div class="child-skills-development-image-column">
-            <div class="child-skills-development-image" style="background-image: url('home-child-dev.png');"></div>
-          </div>    
-          <div class="child-skills-development-content-column">
-            <div class="child-skills-development-content">
-              <h2 class="child-skills-development-title">Child skills Development</h2>
-              <p class="child-skills-development-description">
-                For individuals seeking to expand their skill set and enhance their professional qualifications, certifications offer a valuable avenue for advancement. Basic Logistic and Basic Accounting certifications provide fundamental knowledge in essential areas of business operations, equipping learners with the tools to navigate logistical challenges and financial management tasks effectively.
-              </p>
-              <div class="child-skills-development-cta">
-                <span class="child-skills-development-cta-text">ENROLL NOW</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="fine-arts-section">
-        <div class="fine-arts-container">
-          <div class="fine-arts-content">
-            <div class="fine-arts-details">
-              <h2 class="fine-arts-title">fine arts</h2>
-              <p class="fine-arts-description">
-                For individuals seeking to expand their skill set and enhance their professional qualifications, certifications offer a valuable avenue for advancement. Basic Logistic and Basic Accounting certifications provide fundamental knowledge in essential areas of business operations, equipping learners with the tools to navigate logistical challenges and financial management tasks effectively.
-              </p>
-              <div class="enroll-button">
-                <span class="enroll-text">ENROLL NOW</span>
-              </div>
-            </div>
-          </div>
-          <div class="fine-arts-image-container">
-            <div class="fine-arts-image" role="img" aria-label="Fine arts placeholder image" style="background-image: url('home-art.png');"></div>
-          </div>    
-        </div>
-      </section>
-      <br>
-      <br>
-      <section class="khda-accredited-section">
-        <div class="khda-accredited-content">
-          <h2 class="khda-accredited-title">KHDA ACCREDITED</h2>
-          <p class="khda-accredited-description">
-            KHDA ACCREDIAs small as we are, we are sure of our legIn the year 2019, Let There Be Light (LTBL) Training and Development Institute embarked on its journey with a resolute vision: to nurture the academic and skills excellence of both children and adults. Despite our modest beginnings, we stand firm in our legitimacy, proudly bearing the approval of the Knowledge and Human Development Authority (KHDA) and attaining esteemed quality status with our certifying partner.itimacy by having a KHDA-approved as well as achieved quality status with our certifying partner.TED
-          </p>
-        </div>
-      </section>
-      <section class="vision-section">
-        <div class="vision-container">
-          <div class="vision-content">
-            <div class="vision-text">
-              <h2 class="vision-heading">Vision</h2>
-              <p class="vision-description">
-                LTBL is an Institution producing future leaders with competence, commitment and character.
-              </p>
-            </div>
-          </div>
-          <div class="vision-image-container">
-            <!--add photo in the "img src="-->
-            <img src="vision.png" alt="Vision" class="vision-image" loading="lazy" />
-          </div>
-        </div>
-      </section>
-      <section class="mission-section">
-        <div class="mission-container">
-          <div class="image-column">
+    <div class="mission-vision">
+      <div class="vission">
+        <h1>VISION</h1>
+        <P>LTBL is an Institution producing future leaders with competence, commitment and character.</P>
+        <img src="images/Girl.png">
+      </div>
 
-            <img src="mission.png" alt="Mission image" class="mission-image" />
-          </div>
-          <div class="content-column">
-            <div class="mission-content">
-              <h2 class="mission-title">mission</h2>
-              <p class="mission-description">
-                To provide quality training that empowers student's competence while
-                instilling the importance of moral values.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div class="mission">
+        <img src="images/partner.png">
+        <h1>MISSION</h1>
+        <P>To provide quality training that empowers student’s competence while instilling the importance of moral values.</P>
+      </div>
+    </div>
 
-        
-        <section class="institution-section">
-          <div class="institution-text">
-            <h2 class="institution-subtitle">
+    
+    <section class="institution-section">
+      <div class="institution-text">
+          <h2 class="institution-subtitle">
               <span class="highlight">BE A PART</span> OF OUR
-            </h2>
-            <h1 class="institution-title">INSTITUTION</h1>
+          </h2>
+          <h1 class="institution-title">INSTITUTION</h1>
+      </div>
+      <form class="institution-form" id="enrollmentForm" onsubmit="sendMail(); return false;">
+          <input type="text" id="name" class="input-field" placeholder="Your Name" required>
+          <input type="text" id="parentName" class="input-field" placeholder="Parent's Name" required>
+          <input type="email" id="email" class="input-field" placeholder="Email" required>
+          <input type="tel" id="phone" class="input-field" placeholder="Phone" required>
+          <textarea id="message" class="input-field" placeholder="Your Message" required></textarea>
+          <div class="button-container">
+              <button type="submit" class="submit-button">ENROLL NOW</button>
+              <button type="reset" class="reset-button">RESET</button>
           </div>
-          <form class="institution-form" id="enrollmentForm">
-            <input type="text" id="name" class="input-field" placeholder="Your Name" required>
-            <input type="text" id="parentName" class="input-field" placeholder="Parent's Name" required>
-            <input type="email" id="email" class="input-field" placeholder="Email" required>
-            <input type="tel" id="phone" class="input-field" placeholder="Phone" required>
-            <textarea id="message" class="input-field" placeholder="Your Message" required></textarea>
-            <button type="submit" class="submit-button">ENROLL NOW</button>
-            <button type="reset" class="reset-button">RESET</button>
-          </form>
-        </section>
-        
-        <div class="footer">
-          <div class="footer_top">
-            <div class="footer_logo">
-              <img src="BigLogo.png" alt="School Logo" class="foot_logo">
-            </div>
-            <div class="footer_text">
-              <div class="footer-title">LET THERE BE LIGHT</div>
-              <div class="footer-subtitle">TRAINING & DEVELOPMENT INSTITUTE</div>
-            </div>
-          </div>
-          <div class="footer_bottom">
-            <div class="location">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.0273546109224!2d55.323388874839786!3d25.269665228762722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5df59b6f1cb7%3A0x64b09710ab9df794!2sLTBL%20Training%20%26%20Development%20Institute!5e0!3m2!1sen!2sae!4v1716888325872!5m2!1sen!2sae" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <div class="location-title">Our Institute</div>
-              <div class="location-details">
-                <p>Room 106 & 108 Nasco Building</p>
-                <p>Al Muraqqabat - Deira - Dubai</p>
-              </div>
-            </div>
-            <div class="contact_us">
-              <div class="contact-title">Contact Us</div>
-              <div class="contact-details">
-                <p><img src="email-icon.png" alt="Email Icon" class="icon"> <a href="mailto:info@ltbl-institute.net">Email: info@ltbl-institute.net</a></p>
-                <p><img src="phone-icon.png" alt="Phone Icon" class="icon"> Phone: 04 548 8778</p>
-              </div>
-            </div>
-            <div class="follow_us">
-              <div class="follow-title">Follow Us</div>
-              <div class="follow-icons">
-                <a href="https://www.facebook.com/LTBLInstitute" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.youtube.com/@ltblinstitute-dubai3805" target="_blank"><i class="fab fa-youtube"></i></a>
-              </div>
-            </div>
-          </div>   
-          <footer class="footer2">
-            Copyright © 2024 Let There Be Light Training & Development Institute. All rights reserved.
-          </footer>     
+      </form>
+  </section>
+  
+  
+  <div class="footer">
+    <div class="footer-content">
+    <div class="footer_top">
+      <div class="footer_logo">
+        <img src="Images/BigLogo.png" alt="School Logo" class="foot_logo">
+      </div>
+      <div class="footer_text">
+        <div class="footer-title">LET THERE BE LIGHT</div>
+        <div class="footer-subtitle">TRAINING & DEVELOPMENT INSTITUTE</div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.0273546109224!2d55.323388874839786!3d25.269665228762722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5df59b6f1cb7%3A0x64b09710ab9df794!2sLTBL%20Training%20%26%20Development%20Institute!5e0!3m2!1sen!2sae!4v1716888325872!5m2!1sen!2sae" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="location-title">Our Institute</div>
+        <div class="location-details">
+          <p>Room 106 & 108 Nasco Building</p>
+          <p>Al Muraqqabat - Deira - Dubai</p>
         </div>
-      </div> 
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          const hamburger = document.querySelector('.hamburger');
-          const navLinks = document.querySelector('.nav-links');
-    
-          hamburger.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-          });
-        });
-      </script>
-    
+      </div>
+      <div class="contact_us">
+        <div class="contact-title">Contact Us</div>
+        <div class="contact-details">
+          <p><img src="Images/email-icon.png" alt="Email Icon" class="icon"> <a href="mailto:info@ltbl-institute.net">Email: info@ltbl-institute.net</a></p>
+          <p><img src="Images/phone-icon.png" alt="Phone Icon" class="icon"> Phone: 04 548 8778</p>
+        </div>
+      </div>
+      <div class="follow_us">
+        <div class="follow-title">Follow Us</div>
+        <div class="follow-icons">
+          <a href="https://www.facebook.com/LTBLInstitute" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/@ltblinstitute-dubai3805" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    </div>   
+    <footer class="footer2">
+      Copyright © 2024 Let There Be Light Training & Development Institute. All rights reserved.
+    </footer>     
+  </div>
+</div>
+      <script src="Default.js"></script> 
 </body>
 </html>

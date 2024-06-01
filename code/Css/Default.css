@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap');
+
+
 /* ROOT VARIABLES */
 :root {
   --main-color-green: #179b11;
@@ -22,6 +26,7 @@ body, html {
   height: 100%;
 }
 
+
 /* SCROLL CONTAINER */
 .scroll-container {
   overflow-y: auto;
@@ -35,71 +40,6 @@ body, html {
 }
 
 /********************* HEADER/ NAV BAR / 1ST PART *******************/
-
-.main-header {
-  position: relative;
-  background-image: url('Images/Hero.png');
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  min-height: 1000px;
-  padding-top: 30px;
-  color: white;
-  position: relative;
-  z-index: 1; 
-}
-
-.main-header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index: -1;
-}
-
-.main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  background-color: #1c2321;
-}
-
-.main-statement {
-  text-align: center;
-  color: white;
-}
-
-.main-statement h1 {
-  margin: 0 auto; 
-  font-size: 50px;
-  width: 70%;
-  text-align: center; 
-}
-
-.main-statement p {
-  margin: 0 auto; 
-  font-size: 20px;
-  width: 80%;
-  text-align: center; 
-  margin-top: 100px;
-}
-
-
-
-.about-header {
-  background-image: url('Images/about.png');
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  min-height: 600px;
-  padding-top: 20px;
-  color: white;
-  position: relative;
-}
 
 .header-content {
   position: absolute;
@@ -158,14 +98,17 @@ nav {
   white-space: nowrap;
   line-height: 0.3;
   padding-left: 10px;
+  font-weight: 700;
 }
 
 .school-names h1 {
   color: var(--main-color-green);
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .school-names h2 {
+  font-weight: bold;
   color: white;
   font-size: 15px;
 }
@@ -313,143 +256,9 @@ li.active:hover {
   }
 }
 
-
-/*********************************** IDENTITY *********************************/
-.Identity {
-  margin: 0px 55px 10px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-}
-
-.Identity h1 {
-  font-size: 80px;
-  text-shadow: 3px 3px 5px #1c2321;
-}
-
-.Identity p {
-  text-align: right;
-  margin: 0;
-  font-size: 17px;
-  padding-left: 20px; 
-  margin-left: 130px;
-}
-
-
-
-@keyframes slideInFromLeft {
-  0% {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-.Identity h1,
-.Identity p {
-  animation: slideInFromLeft 1s ease forwards;
-}
-
-
-/* RESPONSIVE DESIGN FOR IDENTITY*/
-@media (max-width: 768px) {
-  .Identity {
-    margin: 10px 20px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .Identity h1 {
-    font-size: 40px;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  
-  .Identity p {
-    text-align: left;
-    margin: 0;
-    padding-left: 0;
-    margin-left: 0;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .Identity {
-    margin: 10px 30px;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .Identity h1 {
-    font-size: 60px;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  
-  .Identity p {
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding-left: 0;
-    margin-left: 0;
-  }
-
-}
-
-
-/********************************* IMAGE GALLERY ******************************/
-.image-gallery {
-  overflow: hidden;
-  position: relative;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-top: 50px;
-}
-
-.image-gallery img {
-  max-height: 300px;
-  flex-shrink: 0;
-  border-radius: 10px;
-  margin-left: 30px;
-}
-
-.gallery-wrapper {
-  display: flex;
-  width: 200%; 
-  animation: slide 15s linear infinite;
-}
-
-
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-
-/*RESPONSIVE DESIGN FOR IMAGE GALLERY */
-@media (max-width: 768px) {
-  .image-gallery img {
-    max-height: 150px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .image-gallery img {
-    max-height: 175px;
-  }
-}
-
 /********************************* INSTITUTION SECTION ******************************/
 .institution-section {
   padding: 100px 20px;
-  margin-top: 100px;
   background-color: var(--main-color-gray);
   color: white;
   backdrop-filter: blur(50px);
@@ -479,29 +288,6 @@ li.active:hover {
   margin-left: 50px;
 }
 
-.email-input {
-  border-radius: 25px;
-  padding: 10px 20px;
-  border: none;
-  font-size: 1rem;
-  flex: 1;
-}
-
-.submit-button {
-  margin-left: 30px;
-  border-radius: 25px;
-  padding: 10px 20px;
-  background-color: var(--main-color-green);
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-}
-
-.highlight {
-  color: rgba(251, 175, 0, 1);  
-}
-
 .input-field {
   width: 100%;
   padding: 10px;
@@ -511,47 +297,44 @@ li.active:hover {
   box-sizing: border-box;
 }
 
-.textarea-field {
+.button-container {
+  display: flex;
+  justify-content: flex-end;
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
+  margin-top: 10px;
 }
 
 .submit-button {
-  margin-left: 0; 
-  margin-top: 10px;
+  border-radius: 25px;
   padding: 10px 20px;
   background-color: var(--main-color-green);
   color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
 }
 
-
-.submit-button,
 .reset-button {
+  margin-left: 10px;
+  border-radius: 25px;
   padding: 10px 20px;
-  margin-top: 10px;
   background-color: var(--main-color-green);
   color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-}
-
-.reset-button {
-  margin-left: 10px;
+  font-size: 1rem;
 }
 
 .submit-button:hover,
 .reset-button:hover {
-  background-color:var(--main-color-green-dark) ;
+  background-color: var(--main-color-green-dark);
 }
+
+.highlight {
+  color: rgba(251, 175, 0, 1);  
+}
+
+
 
 /*responsive design for institution section*/
 @media (max-width: 768px) {
@@ -632,14 +415,16 @@ li.active:hover {
   }
 }
 
-
-
-
 /********************* FOOTER *******************************/
 .footer {
   background-color: #179b11;
-  padding: 50px;
+  padding: 10px 0;
   color: white;
+
+}
+
+.footer-content{
+  margin-left: 40px;
 }
 
 .footer_top {
@@ -658,20 +443,20 @@ li.active:hover {
 }
 
 .footer-title {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .footer-subtitle {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 5px;
   font-weight: bold;
 }
 
 .footer_bottom {
   display: flex;
-  align-items: flex-start; 
-  margin-top: 20px;
+  align-items: flex-start;
+  margin-top: 10px;
   margin-left: 180px;
 }
 
@@ -680,18 +465,18 @@ li.active:hover {
 }
 
 .location-title {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   margin-top: 20px;
 }
 
 .location-details {
-  font-size: 16px;
+  font-size: 15px;
   margin-top: 5px;
 }
 
 .location-details p {
-  line-height: 0.7; 
+  line-height: 0.7;
 }
 
 .contact_us {
@@ -699,12 +484,12 @@ li.active:hover {
 }
 
 .contact-title {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .contact-details {
-  font-size: 16px;
+  font-size: 15px;
   margin-top: 10px;
 }
 
@@ -721,9 +506,8 @@ li.active:hover {
   color: var(--main-color-yellow);
 }
 
-
 .follow_us {
-  margin-left: 150px; 
+  margin-left: 150px;
 }
 
 .follow-title {
@@ -733,121 +517,92 @@ li.active:hover {
 }
 
 .follow-icons a {
-  margin-right: 10px; 
+  margin-right: 10px;
   color: white;
-  transition: color 0.3s; 
+  transition: color 0.3s;
 }
 
 .follow-icons a:hover {
-  color: var(--main-color-yellow)}
+  color: var(--main-color-yellow);
+}
 
-  .footer2 {
-    text-align: center;
-    color: rgba(255, 255, 255, 0.49);
-    font: 15px Alegreya Sans, sans-serif;
-    margin-top: 20px; 
-    margin: 0;
-    padding: 0;
-  }
-  
-
-  @media only screen and (max-width: 768px) {
-    .footer_logo {
-      margin-right: 0; 
-      margin-bottom: 20px; 
-    }
-  
-    .footer_bottom {
-      margin-left: 0; 
-      flex-direction: column; 
-    }
-  
-    .location,
-    .contact_us,
-    .follow_us {
-      margin-right: 0;
-      margin-left: 0; 
-    }
-  }
-
-  @media only screen and (max-width: 1024px) {
-    .footer_bottom {
-      margin-left: 0;
-      margin-top: 20px;
-      flex-direction: column;
-    }
-  
-    .location,
-    .contact_us,
-    .follow_us {
-      margin-right: 0;
-      margin-left: 0;
-    }
-  }
-/********************************* MISSION AND VISION SECTION ******************************/
-.mission-vision {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 60px;
-  background-color: #f4f4f4;
-  color: var(--main-color-gray);
+.footer2 {
   text-align: center;
-  margin: 0px 0px 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: rgba(255, 255, 255, 0.49);
+  font: 15px Alegreya Sans, sans-serif;
+  margin-top: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-.mission-vision .mission,
-.mission-vision .vision {
-  flex: 1;
-  margin: 0 20px;
+@media only screen and (max-width: 1024px) {
+  .footer_text {
+    font-size: 15px;
+  }
+
+  .footer_bottom {
+    margin-top: 20px;
+    align-items: flex-start;
+    margin-left: 0;
+  }
+
+  .location,
+  .contact_us,
+  .follow_us {
+    margin: 10px 20px;
+  }
+
+  .location {
+    margin-right: 0;
+  }
 }
 
-.mission-vision h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  color: var(--main-color-green);
-}
-
-.mission-vision p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-}
-
-/* Responsive design for mission and vision section */
-@media (max-width: 768px) {
-  .mission-vision {
+@media only screen and (max-width: 768px) {
+  .footer_top {
     flex-direction: column;
+    align-items: flex-start;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .footer_bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .location,
+  .contact_us,
+  .follow_us {
+    margin: 10px 0;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer {
     padding: 20px;
   }
 
-  .mission-vision .mission,
-  .mission-vision .vision {
-    margin: 20px 0;
+  .footer-title,
+  .footer-subtitle {
+    font-size: 20px;
   }
 
-  .mission-vision h1 {
-    font-size: 2rem;
+  .location-title,
+  .contact-title,
+  .follow-title {
+    font-size: 14px;
   }
 
-  .mission-vision p {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .mission-vision {
-    padding: 30px;
+  .location-details,
+  .contact-details {
+    font-size: 14px;
   }
 
-  .mission-vision h1 {
-    font-size: 2.2rem;
-  }
-
-  .mission-vision p {
-    font-size: 1.1rem;
+  .follow-icons a {
+    margin-right: 5px;
   }
 }
-
 

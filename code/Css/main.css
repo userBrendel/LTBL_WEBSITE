@@ -1,0 +1,371 @@
+
+
+.main-header-content {
+  text-align: left;
+  max-width: 1000px; 
+  font-size: 25px;
+  margin: 100px 100px; 
+}
+
+.main-header-content h1 {
+  margin-top: 200px;
+  line-height: 60px;
+  text-shadow: 5px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.main-header-content p {
+  line-height: 35px;
+  font-size: 20px;
+}
+
+.cta-button {
+  background-color: #179b11;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 40px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #28582a;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c2321;
+  box-shadow: 0 40px 20px rgba(0, 0, 0, 0.3);
+}
+
+.main-statement {
+  text-align: center;
+  color: white;
+  padding-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.main-statement h1 {
+  margin: 0 auto;
+  padding-top: 50px;
+  font-size: 50px;
+  width: 50%;
+  text-align: center;
+  z-index: 1;
+  font-weight: bold;
+}
+
+.main-statement p {
+  margin: 0 auto;
+  font-size: 20px;
+  width: 60%;
+  text-align: center;
+  margin-top: 30px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .main-header-content {
+      margin: 100px 50px;
+  }
+  
+  .main-header-content h1 {
+      font-size: 30px;
+  }
+  
+  .main-header-content p {
+      font-size: 18px;
+  }
+  
+  .cta-button {
+      padding: 12px 20px;
+      font-size: 18px;
+  }
+
+  .main-header {
+      min-height: 800px;
+      background-size: auto;
+      height: auto;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .main-header-content {
+      font-size: 15px;
+      text-align: center;
+      margin: 100px 50px;
+  }
+
+  .main-header {
+      background-size: auto;
+      height: auto;
+      min-height: 900px;
+  }
+
+  .main-header-content h1,
+  .main-header-content p {
+      line-height: 1;
+  }
+
+  .main-container {
+      margin-top: 0;
+      padding: 20px;
+  }
+
+  .main-statement h1 {
+      font-size: 20px;
+      width: 80%;
+  }
+
+  .main-statement p {
+      font-size: 10px;
+  }
+
+  .main-header-content h1 {
+      font-size: 24px;
+  }
+
+  .main-header-content p {
+      font-size: 16px;
+  }
+
+  .cta-button {
+      padding: 10px 15px;
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-header-content h1 {
+      font-size: 20px;
+  }
+
+  .main-header-content p {
+      margin-top: 40px;
+      font-size: 15px;
+  }
+
+  .cta-button {
+      padding: 8px 12px;
+      font-size: 14px;
+  }
+
+  .main-header {
+      min-height: 700px;
+  }
+}
+
+.programs-container {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 100px 40px 100px;
+}
+
+.programs-container h1 {
+  font-size: 50px;
+}
+
+.programs-container p {
+  font-size: 20px;
+}
+
+.certification-container,
+.development-container,
+.FineArts-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.certification-container .content,
+.FineArts-container .content {
+  padding-right: 100px;
+}
+
+.development-container .content {
+  text-align: right;
+  padding-left: 100px;
+}
+
+.certification-container img,
+.development-container img,
+.FineArts-container img {
+  width: 500px;
+  height: auto;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.103);
+}
+
+.certification-container button,
+.development-container button,
+.FineArts-container button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.certification-container button:hover,
+.development-container button:hover,
+.FineArts-container button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 1024px) {
+  .certification-container,
+  .development-container,
+  .FineArts-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .certification-container .content,
+  .development-container .content,
+  .FineArts-container .content {
+      padding: 0;
+      text-align: center;
+  }
+
+  .certification-container img,
+  .development-container img,
+  .FineArts-container img {
+      width: 100%;
+      margin-bottom: 20px;
+  }
+
+  .programs-container {
+      margin: 50px;
+  }
+
+  .programs-container h1 {
+      font-size: 40px;
+  }
+
+  .programs-container p {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .programs-container {
+      margin: 20px;
+  }
+
+  .programs-container h1 {
+      font-size: 30px;
+  }
+
+  .programs-container p {
+      font-size: 16px;
+  }
+
+.certification-container button,
+.development-container button,
+.FineArts-container button {
+ margin-bottom: 20px;
+}
+}
+
+@media (max-width: 480px) {
+  .programs-container h1 {
+      font-size: 25px;
+  }
+
+  .programs-container p {
+      font-size: 15px;
+  }
+}
+
+.KHDA-content {
+  color: white;
+  padding: 90px;
+  background-color: #3b46417d;
+}
+
+.KHDA-content p {
+  width: 70%;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .KHDA-content {
+      padding: 50px;
+  }
+
+  .KHDA-content p {
+      width: 90%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .KHDA-content {
+      padding: 70px;
+  }
+
+  .KHDA-content p {
+      width: 80%;
+  }
+}
+
+
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.mission-vision > div {
+  flex: 1;
+  min-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.mission-vision h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.mission-vision p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.mission-vision img {
+  max-width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .mission-vision {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .mission-vision > div {
+      width: 80%;
+      margin: 20px 0;
+  }
+}

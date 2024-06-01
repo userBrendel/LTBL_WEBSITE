@@ -1,0 +1,215 @@
+
+
+  /********************************* MISSION AND VISION SECTION ******************************/
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px;
+    background-color: #f4f4f4;
+    color: var(--main-color-gray);
+    text-align: center;
+    margin: 0px 0px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mission-vision .mission,
+  .mission-vision .vision {
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .mission-vision h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--main-color-green);
+  }
+  
+  .mission-vision p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  
+  /* Responsive design for mission and vision section */
+  @media (max-width: 768px) {
+    .mission-vision {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .mission-vision .mission,
+    .mission-vision .vision {
+      margin: 20px 0;
+    }
+  
+    .mission-vision h1 {
+      font-size: 2rem;
+    }
+  
+    .mission-vision p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .mission-vision {
+      padding: 30px;
+    }
+  
+    .mission-vision h1 {
+      font-size: 2.2rem;
+    }
+  
+    .mission-vision p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  
+  
+
+  /*********************************** IDENTITY *********************************/
+.Identity {
+    margin: 0px 55px 10px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+  
+  .Identity h1 {
+    font-size: 80px;
+    text-shadow: 3px 3px 5px #1c2321;
+  }
+  
+  .Identity p {
+    text-align: right;
+    margin: 0;
+    font-size: 17px;
+    padding-left: 20px; 
+    margin-left: 130px;
+  }
+  
+  
+  
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .Identity h1,
+  .Identity p {
+    animation: slideInFromLeft 1s ease forwards;
+  }
+  
+  
+  /* RESPONSIVE DESIGN FOR IDENTITY*/
+  @media (max-width: 768px) {
+    .Identity {
+      margin: 10px 20px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .Identity h1 {
+      font-size: 40px;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    
+    .Identity p {
+      text-align: left;
+      margin: 0;
+      padding-left: 0;
+      margin-left: 0;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .Identity {
+      margin: 10px 30px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .Identity h1 {
+      font-size: 60px;
+      text-align: left;
+      margin-bottom: 10px;
+    }
+    
+    .Identity p {
+      text-align: left;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      padding-left: 0;
+      margin-left: 0;
+    }
+  
+  }
+  
+  
+  /********************************* IMAGE GALLERY ******************************/
+  .image-gallery {
+    overflow: hidden;
+    position: relative;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  
+  .image-gallery img {
+    max-height: 300px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    margin-left: 30px;
+  }
+  
+  .gallery-wrapper {
+    display: flex;
+    width: 200%; 
+    animation: slide 15s linear infinite;
+  }
+  
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  
+  /*RESPONSIVE DESIGN FOR IMAGE GALLERY */
+  @media (max-width: 768px) {
+    .image-gallery{
+      margin-left: 0px;
+      margin-right: 0px;
+  
+    }
+  
+    .image-gallery img {
+      max-height: 150px;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .image-gallery{
+      margin-left: 0px;
+      margin-right: 0px;
+  
+    }
+  
+    .image-gallery img {
+      max-height: 175px;
+    }
+  }
