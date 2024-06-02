@@ -5,6 +5,9 @@
   line-height: 0.5;
 }
 
+
+
+
   /********************************* MISSION AND VISION SECTION ******************************/
   .mission-vision {
     display: flex;
@@ -107,22 +110,7 @@
   
   
   
-  @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  .Identity h1,
-  .Identity p {
-    animation: slideInFromLeft 1s ease forwards;
-  }
-  
+
   
   /* RESPONSIVE DESIGN FOR IDENTITY*/
   @media (max-width: 768px) {
