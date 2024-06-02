@@ -8,15 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  document.addEventListener("DOMContentLoaded", function() {
-    const enrollButton = document.querySelector(".cta-button");
-    const institutionSection = document.querySelector(".institution-section");
-
-    enrollButton.addEventListener("click", function() {
-        institutionSection.scrollIntoView({ behavior: "smooth" });
-    });
-});
-
 
 function sendMail(){
   (function(){

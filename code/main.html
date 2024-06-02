@@ -1,10 +1,11 @@
 <!DOCTYPE html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LTBL</title>
+    <title>LET THERE BE LIGHT.</title>
     <link rel="stylesheet" type="text/css" href="css/Default.css">
     <link rel="stylesheet" type="text/css" href="css/Main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="images/LTBL LOGO 1.png" type="image/png" width="35px">
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <style>
       .main-header {
@@ -16,6 +17,7 @@
         min-height: 1000px;
         padding-top: 30px;
         color: white;
+        background-color: var(--main-color-gray);
         z-index: 1; 
         background-position: center 20%;
       }
@@ -55,7 +57,7 @@
              <a href="about.html"><li>ABOUT</li></a>
              <a href="classes.html"><li>CLASSES</li></a> 
              <a href="admission.html"><li>ADMISSION</li></a>
-             <li>MORE</li>
+             <a href="more.html"><li>MORE</li></a>
             </ul>
           </nav>  
 
@@ -81,7 +83,8 @@
             <div class="content">
                 <h1>CERTIFICATION</h1>
                 <p>Let There Be Light" embraces the holistic ethos of the ACE (Accelerated Christian Education) curriculum, forging a seamless integration of spiritual enlightenment and academic achievement within a Christian framework. At its core, "Let There Be Light" is dedicated to nurturing the complete individual—mind, body, and spirit—immersing learners in a transformative educational journey where faith and scholarship converge harmoniously</p>
-                <button>VIEW MORE</button>
+                <button onclick="location.href='classes.html'">VIEW MORE</button>
+
             </div>
             <img src="Images/Certifications.jpg">
         </div>
@@ -91,7 +94,8 @@
             <div class="content">
                 <h1>CHILD SKILLS DEVELOPMENT</h1>
                 <p>LTBL Child Skill Development is committed to providing children with the tools, resources, and support they need to thrive in all areas of development, laying a solid foundation for future success and well-being. Through its holistic, individualized, and family-centered approach, LTBL Child Skill Development empowers children to shine brightly and reach their full potential.</p>
-                <button>VIEW MORE</button>
+                <button onclick="location.href='classes.html'">VIEW MORE</button>
+
             </div>
         </div>
     
@@ -99,11 +103,15 @@
             <div class="content">
                 <h1>FINE ARTS</h1>
                 <p>LTBL Fine Arts provides opportunities for participants to develop their artistic skills and techniques under the guidance of experienced instructors and mentors. Whether it's learning to paint, play a musical instrument, act on stage, or dance, participants receive personalized instruction and support tailored to their individual needs and aspirations.</p>
-                <button>VIEW MORE</button>
+                <button onclick="location.href='classes.html'">VIEW MORE</button>
+
             </div>
             <img src="Images/finearts.jpg">
     </div>
     </div>
+
+    <button id="scrollToTopButton" onclick="scrollToTop()">SCROLL UP</button>
+
 
     <div class="KHDA-container">
       <div class="KHDA-content">
@@ -143,7 +151,6 @@
           <input type="email" id="email" class="input-field" placeholder="Email" autocomplete="email" required>
           <input type="tel" id="phone" class="input-field" placeholder="Phone" autocomplete="tel" required>
           <textarea id="message" class="input-field" placeholder="Your Message" autocomplete="off" required></textarea>
-          <!-- Setting autocomplete="off" for the message field as it's less likely to be autofilled -->
           <div class="button-container">
               <button type="submit" class="submit-button">ENROLL NOW</button>
               <button type="reset" class="reset-button">RESET</button>
@@ -196,28 +203,17 @@
     </footer>     
   </div>
 </div>
-
 <script>
-  const body = document.body;
-  let lastScroll = 0;
-  
-  window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-  
-    if (currentScroll <= 0) {
-      body.classList.remove("scroll-up");
-    }
-  
-    if (currentScroll < lastScroll && !body.classList.contains("scroll-down")) {
-      body.classList.remove("scroll-down");
-      body.classList.add("scroll-up");
-    }
-    
-    lastScroll = currentScroll;
-  });
+  document.addEventListener("DOMContentLoaded", function() {
+    const enrollButton = document.querySelector(".cta-button");
+    const institutionSection = document.querySelector(".institution-section");
+
+    enrollButton.addEventListener("click", function() {
+        institutionSection.scrollIntoView({ behavior: "smooth" });
+    });
+});
+
 </script>
-
-
 
       <script src="Default.js"></script> 
 </body>

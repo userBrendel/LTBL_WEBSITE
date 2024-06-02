@@ -303,7 +303,8 @@
   }
 
   .KHDA-content p {
-      width: 90%;
+      width: 100%;
+      font-size: 15px;
   }
 }
 
@@ -334,6 +335,13 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.mission-vision > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: var(--main-color-light);
 }
 
 .mission-vision h1 {
@@ -354,6 +362,9 @@
   height: auto;
   border-radius: 10px;
 }
+
+
+
 
 @media (max-width: 768px) {
   .mission-vision {

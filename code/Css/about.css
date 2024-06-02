@@ -2,6 +2,7 @@
   text-align: center;
   margin-top: 250px;
   font-size: 30px;
+  line-height: 0.5;
 }
 
   /********************************* MISSION AND VISION SECTION ******************************/
@@ -37,6 +38,16 @@
   
   /* Responsive design for mission and vision section */
   @media (max-width: 768px) {
+    .about-header {
+      min-height: 500px;
+    }
+
+    .about-content{
+      margin-top: 150px;
+      font-size: 20px;
+      line-height: 0.5;
+    }
+
     .mission-vision {
       flex-direction: column;
       padding: 20px;
