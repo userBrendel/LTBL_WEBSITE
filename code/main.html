@@ -37,7 +37,7 @@
   
     <div class="scroll-container">
       <header>
-        <div class="main-header">
+        <div class="main-header  fade-in">
           <nav >
             <div class="left-container">
               <div class="logo-container">
@@ -64,22 +64,22 @@
 
 
     
-          <div class="main-header-content">
+          <div class="main-header-content fade-in">
             <h1>LET OUR LIGHT SHINE AND<br>IMPACT THE WORLD</h1>
             <p>Guided by Faith: Shining Brightly to Transform the World.</p>
-            <button class="cta-button" onclick="scrollToInstitution()"">ENROLL NOW</button>
+            <button class="cta-button  fade-in" onclick="scrollToInstitution()"">ENROLL NOW</button>
           </div>  
         </header>
 
         <div class="main-container">
           <div class="main-statement">
-              <h1>LET OUR LITTLE LIGHT SHINE AND IMPACT THE WORLD</h1>
+              <h1 class="fade-in">LET OUR LITTLE LIGHT SHINE AND IMPACT THE WORLD</h1>
               <p>Let There Be Light (LTBL) Training and Development Institute was established in the year 2019 with the vision of training children and adults alike for academic and skills excellence. As small as we are, we are sure of our legitimacy by having a KHDA-approved as well as achieved quality status with our certifying partner. <br><br> the process was rigorous, we persevered believing that to see excellence, we should be excellent as well.</p>
           </div>
       </div>
       
     
-    <div class="programs-container">
+    <div class="programs-container slide-in-left">
         <div class="certification-container">
             <div class="content">
                 <h1>CERTIFICATION</h1>
@@ -90,7 +90,7 @@
             <img src="Images/Certifications.jpg">
         </div>
     
-        <div class="development-container">
+        <div class="development-container  slide-in-right">
           <img src="Images/skills.jpg">
             <div class="content">
                 <h1>CHILD SKILLS DEVELOPMENT</h1>
@@ -100,7 +100,7 @@
             </div>
         </div>
     
-        <div class="FineArts-container">
+        <div class="FineArts-container slide-in-left">
             <div class="content">
                 <h1>FINE ARTS</h1>
                 <p>LTBL Fine Arts provides opportunities for participants to develop their artistic skills and techniques under the guidance of experienced instructors and mentors. Whether it's learning to paint, play a musical instrument, act on stage, or dance, participants receive personalized instruction and support tailored to their individual needs and aspirations.</p>
@@ -115,21 +115,21 @@
 
     <div class="KHDA-container">
       <div class="KHDA-content">
-        <h1>KHDA ACCREDITED</h1>
+        <h1 class="fade-in">KHDA ACCREDITED</h1>
         <br>
         <br>
         <p>KHDA ACCREDIAs small as we are, we are sure of our legIn the year 2019, Let There Be Light (LTBL) Training and Development Institute embarked on its journey with a resolute vision: to nurture the academic and skills excellence of both children and adults. Despite our modest beginnings, we stand firm in our legitimacy, proudly bearing the approval of the Knowledge and Human Development Authority (KHDA) and attaining esteemed quality status with our certifying partner.itimacy by having a KHDA-approved as well as achieved quality status with our certifying partner.TED</p>
       </div>
     </div>
 
-    <div class="mission-vision">
+    <div class="mission-vision slide-in-right fade-in">
       <div class="vission">
         <h1>VISION</h1>
         <P>LTBL is an Institution producing future leaders with competence, commitment and character.</P>
         <img src="images/Girl.png">
       </div>
 
-      <div class="mission">
+      <div class="mission slide-in-left fade-in">
         <img src="images/partner.png">
         <h1>MISSION</h1>
         <P>To provide quality training that empowers student’s competence while instilling the importance of moral values.</P>
@@ -205,6 +205,25 @@
 </div>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
+    const elementsToAnimate = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    elementsToAnimate.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
     const enrollButton = document.querySelector(".cta-button");
     const institutionSection = document.querySelector(".institution-section");
 
@@ -213,7 +232,6 @@
     });
 });
   </script>
-
 
       <script src="Default.js"></script> 
 </body>
