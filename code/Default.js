@@ -8,6 +8,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    const elementsToAnimate = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right');
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    elementsToAnimate.forEach(element => {
+        observer.observe(element);
+    });
+});
+
 
 function sendMail(){
   (function(){

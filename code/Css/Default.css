@@ -36,7 +36,7 @@
 .slide-in-right {
   opacity: 0;
   transform: translateX(100px);
-  transition: opacity 3s ease-out, transform 1s ease-out;
+  transition: opacity 1.5s ease-out, transform 1s ease-out;
 }
 
 .slide-in-right.visible {
@@ -45,7 +45,7 @@
 }
 
 
-/* BODY STYLES */
+/******************** BODY STYLES ********************************************/
 body {
   font-family: Alegreya Sans, sans-serif;
   margin: 0;
