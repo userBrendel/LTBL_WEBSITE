@@ -10,6 +10,7 @@
   --main-color-yellow: #FBAF00;
 }
 
+
 /************* ANIMATION *************************/
 .fade-in {
   opacity: 0;
@@ -56,6 +57,7 @@ body {
 
 body, html {
   height: 100%;
+  overflow-x: hidden;
 }
 
 
